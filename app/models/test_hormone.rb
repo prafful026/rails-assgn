@@ -1,0 +1,2 @@
+class TestHormone < ApplicationRecord
+end

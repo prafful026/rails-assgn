@@ -1,0 +1,2 @@
+class Hormone < ApplicationRecord
+end

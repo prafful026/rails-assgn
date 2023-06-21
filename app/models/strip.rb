@@ -1,0 +1,2 @@
+class Strip < ApplicationRecord
+end

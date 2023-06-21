@@ -1,0 +1,2 @@
+class StripBatch < ApplicationRecord
+end

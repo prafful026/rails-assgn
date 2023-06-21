@@ -1,0 +1,2 @@
+class StripHormone < ApplicationRecord
+end
