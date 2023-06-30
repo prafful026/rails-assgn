@@ -1,0 +1,19 @@
+<table>
+  <thead>
+  <tr>
+    <th>Id</th>
+    <th>Code</th>
+    <th>Status</th>
+  </tr>
+  </thead>
+  <tbody>
+  <% @strips.each do |strip| %>
+    <tr>
+      <td><%= strip.id %></td>
+      <td><%= strip.code %></td>
+      <td><%= strip.status %></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+

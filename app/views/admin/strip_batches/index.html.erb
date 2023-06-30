@@ -1,0 +1,32 @@
+<%= link_to "Create new batch!", new_admin_strip_batch_path, class: "btn btn-success btn-lg" %>
+
+<table>
+  <thead>
+  <tr>
+    <th>Id</th>
+    <th>Test type</th>
+    <th>Batch size</th>
+    <th>Hormones</th>
+    <th>Manufacturer</th>
+    <th>Mfd</th>
+    <th>expd</th>
+    <th>strips</th>
+  </tr>
+  </thead>
+  <tbody>
+  <% @strip_batches.each do |strip_batch| %>
+    <tr>
+      <td><%= strip_batch.id %></td>
+      <td><%= strip_batch.test_type %></td>
+      <td><%= strip_batch.batch_size %></td>
+      <td><%= strip_batch.hormones.pluck(:name).to_s %></td>
+      <td><%= strip_batch.manufacturer %></td>
+      <td><%= strip_batch.mfd %></td>
+      <td><%= strip_batch.expd %></td>
+      <td><%= link_to "Strips!", admin_strip_batch_strips_path(strip_batch), class: "btn btn-success btn-lg" %></td>
+
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+

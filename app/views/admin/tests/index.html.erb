@@ -1,0 +1,25 @@
+<table>
+  <thead>
+  <tr>
+    <th>Id</th>
+    <th>Strip code</th>
+    <th>user</th>
+    <th>image</th>
+    <th>test type</th>
+    <th>test_hormones</th>
+  </tr>
+  </thead>
+  <tbody>
+  <% @tests.each do |test| %>
+    <tr>
+      <td><%= test.id %></td>
+      <td><%= test.strip.code %></td>
+      <td><%= test.user.email %></td>
+      <td><%= test.image %></td>
+      <td><%= test.test_type %></td>
+      <td><%= test.test_hormones.pluck(:od_value, :hormone_id, :concentration) %></td></td></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+

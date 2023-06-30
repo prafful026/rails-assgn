@@ -1,0 +1,17 @@
+<%= link_to "Create new hormome!", new_admin_hormone_path, class: "btn btn-success btn-lg" %>
+
+<table>
+  <thead>
+  <tr>
+    <th>Hormone</th>
+  </tr>
+  </thead>
+  <tbody>
+  <% @hormones.each do |hormone| %>
+    <tr>
+      <td><%= hormone.name %></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+

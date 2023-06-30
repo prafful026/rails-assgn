@@ -1,0 +1,10 @@
+
+<%= simple_form_for [:admin, @strip_batch] do |f| %>
+  <%= f.input :test_type, :collection => Test.test_types.keys, required: true %>
+  <%= f.input :batch_size %>
+  <%= f.input :manufacturer %>
+  <%= f.input :mfd %>
+  <%= f.input :expd %>
+  <%= f.association :hormones, as: :check_boxes, include_hidden: false %>
+  <%= f.button :submit %>
+<% end %>
