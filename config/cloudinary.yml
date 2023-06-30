@@ -1,0 +1,11 @@
+development:
+  cloud_name: "dsdbljrxd"
+  api_key: "268614158753641"
+  api_secret: "nfW-q4_E4mPJdX5OjGGl_SaQD9c"
+  secure: true
+
+production:
+  cloud_name: "dsdbljrxd"
+  api_key: "268614158753641"
+  api_secret: "nfW-q4_E4mPJdX5OjGGl_SaQD9c"
+  secure: true

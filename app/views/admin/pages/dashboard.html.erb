@@ -1,0 +1,17 @@
+<div class="container" id="home-container">
+  <div class="jumbotron text-center text-white">
+    <h1 class="display-4">Inito</h1>
+    <p class="lead">OK</p>
+    <hr class="my-4">
+    <p>OK</p>
+    <%#= link_to "Logout!", , class: "btn btn-success btn-lg" %>
+    <%#= link_to "Registered users!", new_user_session_path, class: "btn btn-success btn-lg" %>
+    <%= link_to "Tests!", admin_tests_path, class: "btn btn-success btn-lg" %>
+    <%= link_to "Strip batches!", admin_strip_batches_path, class: "btn btn-success btn-lg" %>
+    <%= link_to "Hormones!", admin_hormones_path, class: "btn btn-success btn-lg" %>
+    <%= button_to "Logout", destroy_user_session_path, method: :delete %>
+
+  </div>
+</div>
+
+

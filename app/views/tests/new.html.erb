@@ -1,0 +1,11 @@
+<%#= render 'shared/errors', obj: @test %>
+
+<%= simple_form_for @test do |f| %>
+  <%= f.input :test_type, :collection => Test.test_types.keys, required: true %>
+  <%= f.input :image, as: :file, required: true %>
+  <%= f.input :strip_code, required: true %>
+  <%#= simple_fields_for :other do |o| %>
+  <%#= o.input :strip_code, label: 'Strip code' %>
+  <%# end %>
+  <%= f.button :submit %>
+<% end %>
