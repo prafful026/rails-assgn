@@ -1,11 +1,11 @@
 development:
-  cloud_name: "dsdbljrxd"
-  api_key: "268614158753641"
-  api_secret: "nfW-q4_E4mPJdX5OjGGl_SaQD9c"
+  cloud_name: <%= ENV["CLOUDINARY_CLOUD_NAME"] %>
+  api_key: <%= ENV["CLOUDINARY_API_KEY"] %>
+  api_secret: <%= ENV["CLOUDINARY_API_SECRET"] %>
   secure: true
 
 production:
-  cloud_name: "dsdbljrxd"
-  api_key: "268614158753641"
-  api_secret: "nfW-q4_E4mPJdX5OjGGl_SaQD9c"
+  cloud_name: <%= ENV["CLOUDINARY_CLOUD_NAME"] %>
+  api_key: <%= ENV["CLOUDINARY_API_KEY"] %>
+  api_secret: <%= ENV["CLOUDINARY_API_SECRET"] %>
   secure: true
